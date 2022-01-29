@@ -1,0 +1,191 @@
+.issue {
+   margin: 0 auto;
+   position: relative;
+   max-width: 1920px;
+   height: auto;
+
+   background-color: $goldenrod;
+
+   .issue-3dice {
+      img {
+         position: absolute;
+         top: 163px;
+         right: 68px;
+         width: 119px;
+      }
+
+      @include responsive(1000px){
+         display: none;
+      }
+   }
+
+   .issue-5dice {
+      img {
+         position: absolute;
+         top: 43px;
+         right: 70px;
+         width: 95px;
+      }
+
+      @include responsive(1000px){
+         display: none;
+      }
+   }
+
+   .issue-title {
+      text-transform: uppercase;
+      padding-top: 158px;
+      text-align: center;
+   }
+
+   .issue-describe {
+      width: 682px;
+      margin: 40px auto 0;
+   }
+
+   .issue-seemore {
+      width: 199px;
+      height: 60px;
+      border-style: solid;
+      border-width: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 55px auto 128px;
+   }
+
+   .issue-brand {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 142px;
+
+      @include responsive(1900px) {
+         flex-wrap: wrap;
+         // grid-template-columns: repeat(4, auto);
+         // justify-content: center;
+         gap: 30px;
+      }
+
+      .issue-brand-item1 {
+         position: relative;
+         height: 480px;
+         width: 380px;
+         background-color: $bright-orange;
+
+         .issue-whpissue {
+            padding-top: 87px;
+            width: 189px;
+            margin-left: 97px;
+         }
+
+         .issue-arrow {
+            margin-top: 63px;
+            margin-left: 115px;
+         }
+
+         .issue-face {
+            width: 167px;
+            position: absolute;
+            right: 0;
+            bottom: -80px;
+         }
+      }
+
+      .issue-brand-item2 {
+         position: relative;
+         background-color: red;
+         height: 480px;
+         width: 380px;
+
+         .issue-b-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $dark-brown;
+            height: 74px;
+
+            .issue-hot {
+               position: absolute;
+               top: -30px;
+               left: 26px;
+            }
+         }
+
+         .issue-brandimg {
+            width: 380px;
+            height: 406px;
+            object-fit: cover;
+         }
+      }
+
+      .issue-brand-item3 {
+         background-color: red;
+         height: 480px;
+         width: 380px;
+         overflow: hidden;
+
+         .issue-c-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $dark-brown;
+            height: 74px;
+         }
+
+         img {
+            max-height: 100%;
+         }
+      }
+      .issue-brand-item4 {
+         position: relative;
+         background-color: red;
+         height: 480px;
+         width: 380px;
+
+         .issue-d-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $bright-orange-two;
+            height: 74px;
+         }
+
+         .issue-brand4img {
+            // height: 100%;
+            // max-width: 100%;
+            // height: max-content;
+            // object-fit: fill;
+
+            width: 380px;
+            height: 406px;
+         }
+
+         .issue-lol {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+         }
+      }
+      .issue-brand-item5 {
+         background-color: red;
+         height: 480px;
+         width: 380px;
+         overflow: hidden;
+
+         .issue-e-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $dark-brown;
+            height: 74px;
+         }
+
+         img {
+            // max-height: 100%;
+            width: 380px;
+            height: 406px;
+         }
+      }
+   }
+}

@@ -1,0 +1,58 @@
+.foot {
+   .foot-des {
+      display: flex;
+      justify-content: space-around;
+
+      .foot-des-whp {
+         .foot-des-whp-title {
+            text-align: unset;
+         }
+         .foot-des-whp-info {
+            // width: 237px;
+         }
+      }
+
+      .foot-des-details {
+         display: flex;
+         justify-content: space-between;
+         @include responsive(900px) {
+            flex-direction: column;
+            gap: 30px;
+         }
+
+         .foot-des-detail {
+            margin-left: 50px;
+            // display: flex;
+
+            .foot-des-detail-title {
+               color: $black-two;
+               text-align: unset;
+            }
+         }
+      }
+   }
+
+   .foot-add-logo {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 88px;
+      margin-bottom: 113px;
+
+      @include responsive(800px) {
+         flex-direction: column;
+         gap: 30px;
+      }
+
+      .foot-add {
+         opacity: 0.5;
+      }
+
+      .foot-logo {
+         display: flex;
+
+         img {
+            margin-left: 10px;
+         }
+      }
+   }
+}

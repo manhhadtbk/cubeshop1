@@ -1,0 +1,147 @@
+.bestproduct {
+  max-width: 1920px;
+  margin: 0 auto;
+
+  position: relative;
+
+  .bestproduct-bg {
+    display: block;
+    width: 100%;
+  }
+
+  .bestproduct-title {
+    font-size: 2.6vw;
+
+    position: absolute;
+    top: 7.8vw;
+    left: 38vw;
+  }
+
+  .bestproduct-describe {
+    position: absolute;
+    top: 12.3vw;
+    left: 32.65vw;
+
+    font-size: 1.04vw;
+    width: 35vw;
+  }
+
+  .bestproduct-items {
+    display: flex;
+    position: absolute;
+    left: 9.17vw;
+    top: 18.6vw;
+
+    .bestproduct-item {
+      position: relative;
+
+      .bestproduct-item-img {
+        display: block;
+        height: 27vw;
+      }
+
+      .bestproduct-number {
+        img {
+          position: absolute;
+          left: 0;
+          top: -2.3vw;
+
+          width: 4.8vw;
+          height: 4.8vw;
+        }
+      }
+
+      .bestproduct-item-go {
+        width: 19vw;
+        height: 4.11vw;
+        background-color: #fff;
+
+        position: absolute;
+
+        top: 25vw;
+        left: 3.6vw;
+
+        border: 0.3vw;
+        border-style: solid;
+
+        img {
+          width: 3.4vw;
+          height: 3.4vw;
+
+          position: absolute;
+          right: 0.3vw;
+          bottom: 0.1vw;
+        }
+      }
+    }
+  }
+
+  @include responsive-min-width(1920px) {
+    .bestproduct-title {
+      font-size: 50px;
+
+      position: absolute;
+      top: 150px;
+      left: 729px;
+    }
+
+    .bestproduct-describe {
+      position: absolute;
+      top: 236px;
+      left: 627px;
+
+      font-size: 20px;
+      width: 665px;
+    }
+
+    .bestproduct-items {
+      display: flex;
+      position: absolute;
+      left: 176px;
+      top: 362px;
+
+      .bestproduct-item {
+        position: relative;
+
+        .bestproduct-item-img {
+          display: block;
+          height: 514px;
+        }
+
+        .bestproduct-number {
+          img {
+            position: absolute;
+            left: 0;
+            top: -46px;
+
+            width: 92px;
+            height: 92px;
+          }
+        }
+
+        .bestproduct-item-go {
+          width: 369px;
+          height: 79px;
+          background-color: #fff;
+
+          position: absolute;
+
+          top: 478px;
+          left: 70px;
+
+          border: 4px;
+          border-style: solid;
+
+          img {
+            width: 65px;
+            height:65px;
+
+            position: absolute;
+            right: 6px;
+            bottom: 6px;
+          }
+        }
+      }
+    }
+  }
+}

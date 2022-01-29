@@ -1,0 +1,95 @@
+.header {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 80px;
+  background-color: $black-two;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    width: 226px;
+    height: 26px;
+    margin-left: 97px;
+  }
+
+  .header__category {
+    display: flex;
+
+    a {
+      margin: 0 30px;
+    }
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .Rectangle-662 {
+      width: 1px;
+      height: 23px;
+      background-color: $pinkish-grey-two;
+    }
+  }
+
+  .header-icon {
+    display: flex;
+    justify-content: center;
+    .fas.fa-caret-down {
+      font-size: 70px;
+      color: #fff;
+      display: none;
+    }
+  }
+
+  @include responsive(1250px) {
+    display: flex;
+    justify-content: space-around;
+    min-height: 80px;
+    height: auto;
+
+    .logodiv {
+      display: flex;
+      align-items: flex-start;
+      align-self: flex-start;
+
+      .logo {
+        margin-top: 22px;
+      }
+    }
+
+    .header-cate-icon {
+      display: flex;
+      flex-direction: column;
+
+      .header-icon {
+        .fas.fa-caret-down {
+          display: block;
+        }
+      }
+
+      .header-icon:hover {
+        background-color: blue;
+
+        .fas.fa-caret-down {
+          color: red;
+        }
+      }
+
+      .header__category {
+        flex-direction: column;
+        gap: 30px;
+        display: none;
+
+        .Rectangle-662 {
+          display: none;
+        }
+      }
+    }
+
+    .header-cate-icon:hover .header__category {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

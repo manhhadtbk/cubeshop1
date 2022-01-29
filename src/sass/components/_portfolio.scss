@@ -1,0 +1,82 @@
+.portfolio {
+   background-color: #fff;
+   width: 100%;
+
+   .portfolio-list {
+      display: grid;
+      grid-template-columns: repeat(5, 300px);
+      grid-template-rows: repeat(5, 440px);
+      grid-gap: 30px;
+      justify-content: center;
+      margin-top: 142px;
+
+      @include responsive(1650px){
+      grid-template-columns: repeat(4, 300px);
+
+      }
+      @include responsive(1350px){
+      grid-template-columns: repeat(3, 300px);
+
+      }
+      @include responsive(1000px){
+      grid-template-columns: repeat(2, 300px);
+
+      }
+      @include responsive(700px){
+      grid-template-columns: repeat(1, 300px);
+
+      }
+
+      .portfolio-item {
+         width: 300px;
+         height: 440px;
+         // background-color: pink;
+
+         img {
+            display: block;
+         }
+
+         .portfolio-info {
+            .portfolio-describe {
+               margin-top: 20px;
+            }
+
+            .portfolio-priceandheart {
+               margin-top: 32px;
+               display: flex;
+               justify-content: space-between;
+
+               .portfolio-price {
+               }
+
+               .portfolio-heartandamount {
+                  display: flex;
+
+                  .portfolio-hearticon {
+                     img {
+                        margin-right: 7px;
+                        margin-top: 6px;
+                     }
+                  }
+
+                  .portfolio-amount {
+                     color: #666;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .portfolio-seemore {
+      width: 199px;
+      height: 60px;
+      border-style: solid;
+      border-width: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin: 116px auto 143px;
+   }
+}

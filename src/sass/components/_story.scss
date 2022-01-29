@@ -1,0 +1,314 @@
+.story {
+   max-width: 1920px;
+   margin: 0 auto;
+
+   overflow: hidden;
+   position: relative;
+   // width: 100%;
+   height: 49.79vw;
+   background-color: $cerulean;
+
+   .story-title {
+      font-size: 2.34vw;
+      padding-top: 7.76vw;
+      text-align: center;
+   }
+
+   .story-describe {
+      font-size: 0.83vw;
+      width: 35.53vw;
+      margin: 2.083vw auto 0;
+   }
+
+   .story-whitepage {
+      img {
+         top: 9.53vw;
+         left: 8.8vw;
+         position: absolute;
+         width: 9.53vw;
+      }
+   }
+
+   .story-namejin {
+      img {
+         top: 3.17vw;
+         left: 77.97vw;
+         position: absolute;
+         width: 7.65vw;
+      }
+   }
+
+   .story-jinsplan {
+      img {
+         top: 5.93vw;
+         left: 82.34vw;
+         position: absolute;
+         width: 7.65vw;
+      }
+   }
+
+   .story-bonsai {
+      img {
+         top: 10.93vw;
+         left: 88.69vw;
+         position: absolute;
+         width: 14.94vw;
+      }
+   }
+
+   .story-table {
+      img {
+         top: 27.96vw;
+         left: 80.73vw;
+         position: absolute;
+         width: 19.53vw;
+      }
+   }
+
+   .story-booklife {
+      img {
+         top: 21.61vw;
+         left: 0vw;
+         position: absolute;
+         width: 10vw;
+      }
+   }
+
+   .story-leanbook {
+      img {
+         top: 25.88vw;
+         left: 10vw;
+         position: absolute;
+         width: 9.37vw;
+      }
+   }
+
+   .story-main {
+      position: absolute;
+      background-color: $black-two;
+      width: 65.26vw;
+      height: 22.96vw;
+      left: 17.34vw;
+      top: 17.96vw;
+
+      .story-line {
+         position: absolute;
+         height: 0.47vw;
+         width: 64.32vw;
+         left: 0.468vw;
+         top: 0.468vw;
+         background-color: $black-two;
+
+         border-color: $cerulean;
+         border-top-width: 0.002vw;
+         border-bottom-width: 0.002vw;
+         border-left-width: 0;
+         border-right-width: 0;
+         border-style: solid;
+      }
+
+      .story-collab {
+         img {
+            position: absolute;
+            width: 31.87vw;
+            bottom: 0;
+         }
+      }
+
+      .story-maindes {
+         position: absolute;
+         background-color: #fff;
+         width: 33.29vw;
+         height: 21.4vw;
+         bottom: 0.155vw;
+         right: 0.2vw;
+
+         .story-maintitle {
+            text-transform: uppercase;
+            font-size: 1.3vw;
+            position: absolute;
+            top: 2vw;
+            right: 6.77vw;
+         }
+
+         .story-maininfo {
+            font-size: 0.83vw;
+            position: absolute;
+            width: 27.5vw;
+            right: 3.54vw;
+            bottom: 8.38vw;
+         }
+
+         .story-seemore {
+            width: 10.41vw;
+            height: 3.125vw;
+            border-style: solid;
+            border-width: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 0.937vw;
+
+            position: absolute;
+            bottom: 2.81vw;
+            right: 20.46vw;
+         }
+      }
+   }
+
+   @include responsive-min-width(1920px) {
+      height: 956px;
+
+      .story-title {
+         font-size: 45px;
+         padding-top: 149px;
+         text-align: center;
+      }
+
+      .story-describe {
+         font-size: 16px;
+         width: 682px;
+         margin: 40px auto 0;
+      }
+
+      .story-whitepage {
+         img {
+            top: 183px;
+            left: 169px;
+            position: absolute;
+            width: 183px;
+         }
+      }
+
+      .story-namejin {
+         img {
+            top: 61px;
+            left: 1517px;
+            position: absolute;
+            width: 147px;
+         }
+      }
+
+      .story-jinsplan {
+         img {
+            top: 114px;
+            left: 1602px;
+            position: absolute;
+            width: 148px;
+         }
+      }
+
+      .story-bonsai {
+         img {
+            top: 190px;
+            left: 1723px;
+            position: absolute;
+            width: 287px;
+         }
+      }
+
+      .story-table {
+         img {
+            top: 537px;
+            left: 1570px;
+            position: absolute;
+            width: 350px;
+         }
+      }
+
+      .story-booklife {
+         img {
+            top: 415px;
+            left: 0;
+            position: absolute;
+            width: 192px;
+         }
+      }
+
+      .story-leanbook {
+         img {
+            top: 497px;
+            left: 190px;
+            position: absolute;
+            width: 180px;
+         }
+      }
+
+      .story-main {
+         position: absolute;
+         background-color: $black-two;
+         width: 1253px;
+         height: 441px;
+         left: 333px;
+         top: 345px;
+
+         .story-line {
+            position: absolute;
+            height: 9px;
+            width: 1235px;
+            left: 342px;
+            top: 354px;
+            background-color: $black-two;
+
+            border-color: $cerulean;
+            border-top-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-style: solid;
+         }
+
+         .story-collab {
+            img {
+               display: block;
+               position: absolute;
+               width: 612px;
+               height: 418px;
+               bottom: 0;
+            }
+         }
+
+         .story-maindes {
+            position: absolute;
+            background-color: #fff;
+            width: 639px;
+            height: 410px;
+            bottom: 4px;
+            right: 3px;
+
+            .story-maintitle {
+               text-transform: uppercase;
+               font-size: 25px;
+               position: absolute;
+               top: 63px;
+               right: 130px;
+            }
+
+            .story-maininfo {
+               font-size: 16px;
+               position: absolute;
+               width: 528px;
+               right: 68px;
+               bottom: 161px;
+            }
+
+            .story-seemore {
+               width: 200px;
+               height: 60px;
+               border-style: solid;
+               border-width: 4px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+
+               font-size: 23px;
+
+               position: absolute;
+               bottom: 54px;
+               right: 393px;
+            }
+         }
+      }
+   }
+}

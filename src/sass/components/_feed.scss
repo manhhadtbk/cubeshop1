@@ -1,0 +1,163 @@
+.feed {
+   margin: 0 auto;
+   position: relative;
+   max-width: 1920px;
+   height: auto;
+   overflow: hidden;
+
+   background-color: #fff;
+
+   .feed-hletter {
+      img {
+         position: absolute;
+         left: 226px;
+      }
+   }
+
+   .feed-whathappen {
+      text-transform: uppercase;
+      font-style: normal;
+      padding-top: 148px;
+      text-align: center;
+      color: $black-two;
+   }
+
+   .feed-whathappen-des {
+      color: $black-two;
+
+      width: 668px;
+      text-align: left;
+
+      margin: 50px auto 0;
+   }
+
+   .feed-seemore {
+      border-width: 4px;
+      border-style: solid;
+      width: 200px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 53px auto 0;
+   }
+
+   .feed-w {
+      img {
+         position: absolute;
+         top: 156px;
+         right: 138px;
+      }
+
+      @include responsive(1400px) {
+         display: none;
+      }
+   }
+
+   .feed-heart {
+      img {
+         position: absolute;
+         top: 270px;
+         right: 244px;
+      }
+
+      @include responsive(1400px) {
+         display: none;
+      }
+   }
+
+   .feed-drink {
+      img {
+         position: absolute;
+         top: 316px;
+         right: 1666px;
+      }
+   }
+
+   .feed-main {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      max-width: 100%;
+      margin-top: 72px;
+
+      img {
+
+         @include responsive(1300px) {
+            // width: 100%;
+            width: 100%;
+         }
+      }
+
+      // .feed-main-nav {
+      //    background-color: $black-two;
+      //    color: #fff;
+      //    display: flex;
+      //    text-transform: uppercase;
+
+      //    .far.fa-star {
+      //       margin-left: 19px;
+      //       margin-right: 11px;
+      //    }
+
+      //    .feed-main-twodash {
+      //       height: 13px;
+      //       width: 856px;
+      //       border-top-width: 2px;
+      //       border-top-style: solid;
+      //       border-bottom-width: 2px;
+      //       border-bottom-style: solid;
+
+      //       margin-top: 25px;
+      //       margin-left: 22px;
+      //       margin-right: 37px;
+      //    }
+      // }
+
+      // .feed-main-address{
+      //    background-color: #fff;
+      //    display: flex;
+      //    justify-content: space-between;
+      //    text-transform: uppercase;
+
+      //    div{
+      //       margin: 0 10px;
+      //    }
+      // }
+   }
+
+   .feed-error {
+      position: relative;
+      margin-top: 42px;
+      margin-left: 348px;
+      z-index: 1;
+
+      margin-bottom: 147px;
+   }
+
+   .feed-h {
+      position: absolute;
+      left: 223px;
+      top: 1226px;
+   }
+
+   .feed-click {
+      position: absolute;
+      left: 1182px;
+      top: 1328px;
+   }
+
+   .feed-sun {
+      position: absolute;
+      left: 1747px;
+      top: 656px;
+   }
+
+   .feed-face {
+      position: absolute;
+      left: 1525px;
+      top: 971px;
+   }
+}
